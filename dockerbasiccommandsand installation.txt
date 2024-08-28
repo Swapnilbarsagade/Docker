@@ -1,0 +1,46 @@
+#############Docker installation on ubuntu#############
+
+Refer ->   https://docs.docker.com/engine/install/ubuntu/
+
+#Install using the apt repository
+
+Set up Docker's apt repository.
+
+
+## DOcker Commands:-
+
+1)  docker run  (Create and run a new container from an image)
+
+->  docker run tomcat:latest       #start  container in foreground
+-> docker run -d tomcat:latest    #start  container in background
+
+2) listing the container
+-> docker ps
+->  docker container ls
+->  docker ps -aq      # get list of all container id.
+->   docker -a    # list all up and crash container
+->  docker ps --size     # show size of container in human readable like MB
+
+
+3) docker exec (take access of container and start new process replacing the old processs)
+
+-> docker exec -it <containerid> bash
+
+4) docker stop
+Ingrace 
+
+5) docker images     # shows available images  
+
+6) docker inspect (shows container details)
+
+-> docker inspect <containerid>
+
+7) docker rm <containerid>  # removes the container
+
+8) docker rmi <imageid>   #removes the image
+
+9) docker stats <containerid>      #Display a live stream of container(s) resource usage statistics
+
+10) docker logs <containerid>      # show logs of containers
+
+11) docker history <imageid> or <imagename>    # show history of image
