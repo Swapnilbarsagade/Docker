@@ -10,7 +10,7 @@ RUN apt-get update && \
 EXPOSE 80
 
 # Copy the static ToDo app files to the Apache server directory
-COPY ./todo-app/ /var/www/html/
+COPY ./todo/ /var/www/html/
 
 # Start Apache in the foreground
 CMD ["apache2ctl", "-D", "FOREGROUND"]
